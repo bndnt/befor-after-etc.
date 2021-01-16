@@ -41,7 +41,7 @@ li:nth-child(odd){ /*2n/even парные 2n+1 непарные*/
     justify-content: flex-end;
     padding-right: 10%;
 }
-.before{
+.menu__link{
     display: inline-block;
     text-decoration: none;
     width: 80px;
@@ -49,7 +49,7 @@ li:nth-child(odd){ /*2n/even парные 2n+1 непарные*/
 
 }
 
-.before::after{ /*element*/
+.menu__link::after{ /*element*/
     content: '';
     display: block;
     width: 100%;
@@ -58,7 +58,8 @@ li:nth-child(odd){ /*2n/even парные 2n+1 непарные*/
     transform: scaleX(0);
     transition: all 0.2s;
 }
-.before:hover::after{
+
+.menu__link:hover::after{
     transform: scaleX(1);
 }
 .nav__link{
@@ -88,7 +89,7 @@ li:nth-child(odd){ /*2n/even парные 2n+1 непарные*/
     background: orange;
     transform: scaleX(0);
     transition: all 0.2s;
-    transform-origin:0% ;
+    transform-origin:0 ;
 }
 .nav__link:hover::after{
     transform: scaleX(1);
